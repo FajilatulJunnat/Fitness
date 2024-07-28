@@ -1,3 +1,4 @@
+/* common or shared style in website */
 :root{
     --color1: rgb(255, 255, 255);
     --color2:rgb(230, 83, 60);
@@ -10,11 +11,13 @@ body{
   font-style: normal;
   font-variation-settings:
     "slnt" 0;
+    background-color: rgb(0, 0, 0);
 
 }
 p{
     color: rgba(255, 255, 255, 0.5);
 }
+/* banner part */
 .banner{
     width: 100%;
     background: linear-gradient(180.00deg, rgb(0, 0, 0),rgb(34, 34, 34),rgb(0, 0, 0) 100%);
@@ -151,11 +154,53 @@ margin-top: -40%;
     Font-weight:900;
 Font-size:40px;
 }
-
-
+/* habit section */
+.habit-parent{
+    width: 100%;
+    /* background-color:rgb(0, 0, 0) ; */
+}
+.habit-child{
+    width: 75%;
+    margin: 0 auto;
+    padding: 5% 0;
+}
+.habit-child h1,h3{
+    color: var(--color1);
+}
+.habit-head{
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 4%;
+}
+.habit-head h1{
+    font-size: 48px;
+font-weight: 900;
+line-height: 120%;
+}
+.habit-card{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 8%;
+    text-align: center;
+}
+.card div{
+     border-radius: 50%;
+     /* padding: 1%; */
+     background-color: rgb(34, 34, 34);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-bottom: 30px;
+}
+.card img{
+    border-radius: 50%;
+    margin: 2%;
+}
 
 /* mobile responsive */
 @media screen and (max-width:576px) {
+    /* for banner part */
     .fa-solid{
         color: var(--color1);
         border: none;
@@ -173,7 +218,6 @@ Font-size:40px;
     .banner-home{
         display: flex;
         flex-direction: column;
-        /* justify-content: space-between; */
         align-items: center;
         margin-top: 30px;
     }
@@ -197,6 +241,21 @@ Font-size:40px;
     .fa-play{
         display: block;
         font-size: 4vw;
+    }
+    /* for habit part */
+    .habit-head{
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 4%;
+    }
+    .habit-card{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+       
+    }
+    .card div{
+        margin: 0 23%;
     }
     
 }

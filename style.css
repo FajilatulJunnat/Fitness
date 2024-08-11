@@ -157,23 +157,23 @@ Font-size:40px;
 /* habit section */
 .habit-parent{
     width: 100%;
-    /* background-color:rgb(0, 0, 0) ; */
 }
 .habit-child{
     width: 75%;
     margin: 0 auto;
-    padding: 5% 0;
+    /* padding: 5% 0; */
+    padding-top: 5%;
 }
 .habit-child h1,h3{
     color: var(--color1);
 }
-.habit-head{
+.habit-head,.bmi-head{
     text-align: center;
     width: 75%;
     margin: 0 auto;
     margin-bottom: 4%;
 }
-.habit-head h1{
+.habit-head h1,.bmi-head h1{
     font-size: 48px;
 font-weight: 900;
 line-height: 120%;
@@ -195,8 +195,80 @@ line-height: 120%;
 }
 .card img{
     border-radius: 50%;
+    width: 100%;
+    height: 100%;
     margin: 2%;
 }
+/* run an extra */
+.run{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222222;
+    border-radius: 18px;
+    padding: 3%;
+    margin: 6% 0;
+}
+.run-part-1{
+    width: 40%;
+}
+.run-part-1 h2{
+    color: var(--color1);
+    font-size: 48px;
+    margin-top: -10px;
+}
+.run-part-1 p{
+    margin-bottom: 40px;
+}
+.run-img-part{
+    width: 40%;
+    height: 312px;
+    overflow: hidden;
+    border-radius: 18px;
+  
+}
+.run-img-part img{
+    height: 100%;
+    width: 100%; 
+    transform: scale(2.4);
+    transform-origin: 70% 30%;
+}
+/* BMI Part */
+.bmi-chart{
+    background-color: #222222;
+}
+.chart-child{
+    width: 75%;
+    margin: 0 auto;
+    padding: 3% 0;
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap: 10%;
+}
+.chart-child h2{
+    color: var(--color1);
+    text-align: start;
+}
+table,tr,th,td{
+    border-collapse: collapse;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+   
+}
+th{
+    color: var(--color1);
+}
+td{
+    color: rgba(255, 255, 255, 0.5);
+}
+td,th{
+    padding: 1vw;
+}
+
+
+
+
 
 /* mobile responsive */
 @media screen and (max-width:576px) {
@@ -249,13 +321,36 @@ line-height: 120%;
         margin: 0 auto;
         margin-bottom: 4%;
     }
-    .habit-card{
+    .habit-head h1{
+        font-size: 32px;
+    }
+    .habit-card,.chart-child{
         display: grid;
         grid-template-columns: repeat(1,1fr);
        
     }
-    .card div{
-        margin: 0 23%;
+    /* for run part */
+    .run{
+        display: flex;
+        flex-direction: column;
+        
     }
-    
+    .run-img-div{
+        width: 100%;
+      
+    }
+    .run-part-1{
+        width: 100%;
+        margin-bottom: 10%;
+    }
+    .run-part-1 h2{
+        margin-top: 0;
+    }
+    .run-img-part{
+        width: 100%;
+    }
+    .run-part-1 h2{
+        font-size: 32px;
+    }
 }
+

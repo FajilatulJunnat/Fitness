@@ -102,6 +102,15 @@ letter-spacing: 0%;
     margin-right: 5%;
     
 }
+.btn1{
+    color: var(--color1);
+    background-color: var(--color2);
+    padding: 3% 10%;
+    text-decoration: none;
+    border-radius: 42px;
+    margin-right: 5%;
+    
+}
 .download-btn{
     color: var(--color1);
     border: 1px solid rgb(255, 255, 255);
@@ -177,6 +186,7 @@ Font-size:40px;
     font-size: 48px;
 font-weight: 900;
 line-height: 120%;
+color: var(--color1);
 }
 .habit-card{
     display: grid;
@@ -239,6 +249,7 @@ line-height: 120%;
 }
 .chart-child{
     width: 75%;
+    height: 100%;
     margin: 0 auto;
     padding: 3% 0;
     /* display: flex;
@@ -259,13 +270,65 @@ table,tr,th,td{
 th{
     color: var(--color1);
 }
-td{
+td,select{
     color: rgba(255, 255, 255, 0.5);
 }
 td,th{
     padding: 1vw;
 }
-
+form div{
+    display: flex;
+    justify-content: space-between;
+}
+input,select,option{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.hw-inp input,input{
+    width: 40%;
+    border: 0;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    padding: 13px ;
+}
+#gender{
+    width: 45%;
+    border: 0;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    padding: 13px;
+}
+#factor{
+    width: 100%;
+    border: 0;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    padding: 13px;
+}
+/* meet our team */
+.team{
+    width: 75%;
+    margin: 0 auto;
+    color: wheat;
+    background-color: #222222;
+    border-radius: 18px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 2vw;
+    gap: 2%;
+}
+.team-child img{
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    background-position: center;
+    background-size: cover;
+}
+.team-name{
+    position: relative;
+    
+    margin-top: -110px;
+    padding: 1vw;
+}
 
 
 
@@ -351,6 +414,18 @@ td,th{
     }
     .run-part-1 h2{
         font-size: 32px;
+    }
+    /* calculate */
+    .chart-child{
+        padding-bottom: 20%;
+    }
+    /* team */
+    .team{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        height: 100%;
+        gap: 1%;
+        padding-bottom: 22%;
     }
 }
 

@@ -498,6 +498,9 @@ hr{
     .chart-child{
         padding-bottom: 20%;
     }
+    .hw-inp input,input{
+        width: 35%;
+    }
     /* team */
     .team{
         display: grid;

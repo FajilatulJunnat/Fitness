@@ -440,6 +440,9 @@ hr{
     .banner-txt{
         width: 100%;
     }
+    .join-btn,.download-btn{
+        padding: 3%;
+    }
     .position-div1{
         margin-left: -5%;
         margin-top: -50%;
